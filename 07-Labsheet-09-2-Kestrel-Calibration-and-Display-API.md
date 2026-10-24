@@ -292,6 +292,7 @@ Server: Kestrel
 
 {"raw":2048,"calibrated":50.0,"unit":"%","displayMsg":"SYSTEM READY","timestamp":"2026-09-13T..."}
 ```
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/60e268d9-886a-46cd-a5a4-376ae2112cdb" />
 
 ---
 
@@ -319,6 +320,8 @@ Server: Kestrel
 {"status":"success","settings":{"rawMin":200,"rawMax":3800,"scaleMin":0,"scaleMax":1000,"unit":"RPM"}}
 ```
 
+<img width="1366" height="768" alt="Screenshot (1332)" src="https://github.com/user-attachments/assets/a0afbb9d-26f5-4236-8516-83621f1ea2eb" />
+
 ---
 
 #### 3. ส่งข้อความใหม่ไปแสดงบนหน้าจอ OLED (HTTP POST)
@@ -343,6 +346,8 @@ Server: Kestrel
 
 {"status":"success","current":"Hello OLED"}
 ```
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1ae405cc-eef0-4f06-afa2-67dbe43e1341" />
 
 ---
 
@@ -377,12 +382,24 @@ Server: Kestrel
    ```
    * **ผลที่คาดหวัง:** ได้รับ **`400 Bad Request`** แจ้งว่าข้อความต้องไม่ว่างเปล่า
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2aa2f650-f158-43e4-bcad-cfb9d6246383" />
+
 ---
 
 ## 5. คำถามท้ายการทดลองเพื่อการประเมินผล
-1. เหตุใดการคำนวณสเกลเซนเซอร์จึงควรทำที่ฝั่ง Kestrel Server แทนที่จะคำนวณบนไมโครคอนโทรลเลอร์ ESP32 ตั้งแต่แรก?
-2. จากการทำ HTTP Forensics หากไม่มีการตรวจสอบเงื่อนไข `RawMax <= RawMin` ในโค้ด จะเกิด Exception ชนิดใดขึ้นในภาษา C# และส่งผลต่อการทำงานของเซิร์ฟเวอร์อย่างไร?
-3. อธิบายสาเหตุทางเทคนิคว่าทำไมคำขอ HTTP POST ที่ไม่มี Header `Content-Type: application/json` จึงถูกปฏิเสธด้วยรหัสสถานะ `415 Unsupported Media Type`?
+
+1. **เหตุใดการคำนวณสเกลเซนเซอร์จึงควรทำที่ฝั่ง Kestrel Server แทนที่จะคำนวณบนไมโครคอนโทรลเลอร์ ESP32 ตั้งแต่แรก?**
+  - **ตอบ:**
+    * **ประหยัดทรัพยากร ESP32:** ช่วยลดภาระการคำนวณคณิตศาสตร์ทศนิยมและการใช้ RAM ของบอร์ด ESP32 ให้ทำงานหลักในการอ่านและส่งค่าดิบได้อย่างรวดเร็ว
+   * **แก้ไขและปรับแต่งได้ง่าย:** สามารถเปลี่ยนจุดปรับเทียบ (Zero/Span Point) หรือเปลี่ยนหน่วยวัดผ่าน Web Server ได้ทันที โดยไม่ต้องแก้โค้ดและเสียเวลา Flash เฟิร์มแวร์ลง ESP32 ใหม่
+   * **เก็บรักษาข้อมูลดิบได้สมบูรณ์:** การส่งค่า Raw ADC มาเก็บไว้ที่เซิร์ฟเวอร์ ทำให้เราสามารถนำข้อมูลดิบย้อนหลังไปคำนวณด้วยสูตรหรือสเกลใหม่ๆ ได้ตลอดเวลา
+
+3. **จากการทำ HTTP Forensics หากไม่มีการตรวจสอบเงื่อนไข `RawMax <= RawMin` ในโค้ด จะเกิด Exception ชนิดใดขึ้นในภาษา C# และส่งผลต่อการทำงานของเซิร์ฟเวอร์อย่างไร?**
+   * **ชนิดของ Exception:** จะเกิด **`DivideByZeroException`** (กรณี `RawMax == RawMin`) หรือทำให้ผลลัพธ์คำนวณออกมาเป็น Infinity/NaN และหาก `RawMax < RawMin` จะทำให้ค่าสเกลคำนวณกลับทิศทางผิดตรรกะ
+   - **ตอบ:** **ผลกระทบต่อเซิร์ฟเวอร์:** หากไม่มีการดักจับ exception ระบบจะตอบกลับด้วยรหัส **`HTTP 500 Internal Server Error`** ซึ่งทำให้บริการหยุดชะงัก ชี้ให้เห็นว่าระบบไม่มีความเสถียร และอาจส่งผลให้เกิดข้อมูล Stack Trace รั่วไหลจนเป็นช่องโหว่ด้านความปลอดภัยได้
+
+4. **อธิบายสาเหตุทางเทคนิคว่าทำไมคำขอ HTTP POST ที่ไม่มี Header `Content-Type: application/json` จึงถูกปฏิเสธด้วยรหัสสถานะ `415 Unsupported Media Type`?**
+   - **ตอบ:** เพราะ Framework .NET Minimal API ต้องใช้ Header `Content-Type` เพื่อบอกระบบว่าจะต้องใช้ตัวแปลงข้อมูล (JSON Deserializer) ชุดไหนในการอ่าน Data Body มาใส่ใน Parameter Model ของ C# พอไคลเอ็นต์ไม่ได้ระบุ `Content-Type: application/json` เซิร์ฟเวอร์ Kestrel จึงไม่รู้วิธีอ่านข้อมูลนั้นและปฏิเสธคำขอทันทีด้วยรหัส **`415 Unsupported Media Type`** เพื่อป้องกันข้อมูลผิดรูปแบบหลุดเข้าไปประมวลผล
 
 
 
