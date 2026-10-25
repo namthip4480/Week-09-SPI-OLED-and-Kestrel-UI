@@ -1,0 +1,22 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\namthip411\Week-09-SPI-OLED-and-Kestrel-UI\build\bootloader\esp-idf\esptool_py && C:\Users\namthip411\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/namthip411/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c: In function 'app_main':
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:34:9: warning: unused variable 'bar_width' [-Wunused-variable]
+   34 |     int bar_width = 50;
+      |         ^~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable SPI_OLED_Project.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/SPI_OLED_Project.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\namthip411\Week-09-SPI-OLED-and-Kestrel-UI\build\esp-idf\esptool_py && C:\Users\namthip411\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/namthip411/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/partition_table/partition-table.bin C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/SPI_OLED_Project.bin"
+SPI_OLED_Project.bin binary size 0x2c300 bytes. Smallest app partition is 0x100000 bytes. 0xd3d00 bytes (83%) free.

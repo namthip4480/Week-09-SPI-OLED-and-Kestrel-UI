@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "tVtjqN2ssRs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\namthip411\\Week-09-SPI-OLED-and-Kestrel-UI\\ESP32.Kestrel.Webserver\\ESP32.Kestrel.Webserver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\10.0.13\\runtime.android-arm.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.android-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\10.0.13\\runtime.android-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\10.0.13\\runtime.android-x86.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\10.0.13\\runtime.linux-arm.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-bionic-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\10.0.13\\runtime.linux-musl-arm.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-musl-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-musl-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\10.0.13\\runtime.linux-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\10.0.13\\runtime.maccatalyst-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.native.system.io.ports\\10.0.13\\runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\10.0.13\\runtime.osx-arm64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\10.0.13\\runtime.osx-x64.runtime.native.system.io.ports.10.0.13.nupkg.sha512",
+    "C:\\Users\\namthip411\\.nuget\\packages\\system.io.ports\\10.0.13\\system.io.ports.10.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

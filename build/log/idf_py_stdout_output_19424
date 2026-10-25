@@ -1,0 +1,244 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\namthip411\Week-09-SPI-OLED-and-Kestrel-UI\build\bootloader\esp-idf\esptool_py && C:\Users\namthip411\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/namthip411/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache C:\Users\namthip411\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/build/config -IC:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main -IC:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/Assests -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/newlib/platform_include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/config/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/config/include/freertos -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/config/xtensa/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/freertos/esp_additions/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/include/soc -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/dma/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/power_supply/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/heap/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/heap/tlsf -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/log/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/soc/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/soc/esp32 -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/soc/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/soc/esp32/register -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/hal/platform_port/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/hal/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/hal/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_rom/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_rom/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_rom/esp32/include/esp32 -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_rom/esp32 -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_common/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_system/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_system/port/soc -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_system/port/include/private -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/xtensa/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/xtensa/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/xtensa/deprecated_include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/include/apps -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/include/apps/sntp -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/lwip/src/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/port/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/port/freertos/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_gpio/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_pm/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/port/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_app_format/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_bootloader_format/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/app_update/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/bootloader_support/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_partition/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/efuse/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/efuse/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_mm/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/spi_flash/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_security/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/pthread/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_timer/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_ringbuf/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_uart/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/vfs/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/app_trace/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_event/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/nvs_flash/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_phy/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_phy/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_vfs_console/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_netif/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/wpa_supplicant/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/wpa_supplicant/port/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_coex/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_wifi/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_wifi/include/local -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_spi/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_gdbstub/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/unity/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/unity/unity/src -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/cmock/CMock/src -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/console -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_i2s/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/sdmmc/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_sdspi/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_sdio/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_dac/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_rmt/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_tsens/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_sdm/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_i2c/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_ledc/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_parlio/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_twai/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/driver/deprecated -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/driver/i2c/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/driver/touch_sensor/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/driver/twai/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/http_parser -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp-tls -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_adc/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_adc/interface -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_adc/esp32/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_adc/deprecated/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_isp/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_cam/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_cam/interface -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_psram/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_jpeg/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_ppa/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_touch_sens/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_driver_touch_sens/hw_ver1/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_eth/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_hid/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/tcp_transport/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_http_client/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_http_server/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_https_ota/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_https_server/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_lcd/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_lcd/interface -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protobuf-c/protobuf-c -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protocomm/include/common -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protocomm/include/security -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protocomm/include/transports -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protocomm/include/crypto/srp6a -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/protocomm/proto-c -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/esp_local_ctrl/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/espcoredump/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/espcoredump/include/port/xtensa -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/wear_levelling/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/fatfs/diskio -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/fatfs/src -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/fatfs/vfs -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/idf_test/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/idf_test/include/esp32 -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/ieee802154/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/json/cJSON -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/nvs_sec_provider/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/perfmon/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/rt/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/spiffs/include -IC:/Users/namthip411/esp/v5.5.1/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI=. -fmacro-prefix-map=C:/Users/namthip411/esp/v5.5.1/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:8:8: error: unknown type name 'spi_device_handle_t'
+    8 | static spi_device_handle_t s_spi_handle = NULL;
+      |        ^~~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:8:43: error: 'NULL' undeclared here (not in a function)
+    8 | static spi_device_handle_t s_spi_handle = NULL;
+      |                                           ^~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:1:1: note: 'NULL' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+  +++ |+#include <stddef.h>
+    1 | // 1. กำหนดขาเชื่อมต่อตามแผนภาพวงจรจริง (GPIO 18, 23, 4, 2, 5)
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:11:1: error: unknown type name 'esp_err_t'
+   11 | esp_err_t oled_spi_init(void)
+      | ^~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c: In function 'oled_spi_init':
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:14:5: error: unknown type name 'gpio_config_t'
+   14 |     gpio_config_t io_conf = {
+      |     ^~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:15:9: error: field name not in record or union initializer
+   15 |         .pin_bit_mask = (1ULL << OLED_PIN_DC) | (1ULL << OLED_PIN_RES),
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:15:9: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:5:26: error: 'GPIO_NUM_2' undeclared (first use in this function)
+    5 | #define OLED_PIN_DC     (GPIO_NUM_2)  // DC (0 = Command, 1 = Data)
+      |                          ^~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:15:34: note: in expansion of macro 'OLED_PIN_DC'
+   15 |         .pin_bit_mask = (1ULL << OLED_PIN_DC) | (1ULL << OLED_PIN_RES),
+      |                                  ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:5:26: note: each undeclared identifier is reported only once for each function it appears in
+    5 | #define OLED_PIN_DC     (GPIO_NUM_2)  // DC (0 = Command, 1 = Data)
+      |                          ^~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:15:34: note: in expansion of macro 'OLED_PIN_DC'
+   15 |         .pin_bit_mask = (1ULL << OLED_PIN_DC) | (1ULL << OLED_PIN_RES),
+      |                                  ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:4:26: error: 'GPIO_NUM_4' undeclared (first use in this function)
+    4 | #define OLED_PIN_RES    (GPIO_NUM_4)  // RES (Hardware Reset)
+      |                          ^~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:15:58: note: in expansion of macro 'OLED_PIN_RES'
+   15 |         .pin_bit_mask = (1ULL << OLED_PIN_DC) | (1ULL << OLED_PIN_RES),
+      |                                                          ^~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:16:9: error: field name not in record or union initializer
+   16 |         .mode = GPIO_MODE_OUTPUT,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:16:9: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:16:17: error: 'GPIO_MODE_OUTPUT' undeclared (first use in this function)
+   16 |         .mode = GPIO_MODE_OUTPUT,
+      |                 ^~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:16:17: warning: excess elements in scalar initializer
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:16:17: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:17:9: error: field name not in record or union initializer
+   17 |         .pull_up_en = GPIO_PULLUP_ENABLE,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:17:9: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:17:23: error: 'GPIO_PULLUP_ENABLE' undeclared (first use in this function)
+   17 |         .pull_up_en = GPIO_PULLUP_ENABLE,
+      |                       ^~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:17:23: warning: excess elements in scalar initializer
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:17:23: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:18:9: error: field name not in record or union initializer
+   18 |         .pull_down_en = GPIO_PULLDOWN_DISABLE,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:18:9: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:18:25: error: 'GPIO_PULLDOWN_DISABLE' undeclared (first use in this function)
+   18 |         .pull_down_en = GPIO_PULLDOWN_DISABLE,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:18:25: warning: excess elements in scalar initializer
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:18:25: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:19:9: error: field name not in record or union initializer
+   19 |         .intr_type = GPIO_INTR_DISABLE,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:19:9: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:19:22: error: 'GPIO_INTR_DISABLE' undeclared (first use in this function)
+   19 |         .intr_type = GPIO_INTR_DISABLE,
+      |                      ^~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:19:22: warning: excess elements in scalar initializer
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:19:22: note: (near initialization for 'io_conf')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:21:5: error: implicit declaration of function 'gpio_config' [-Wimplicit-function-declaration]
+   21 |     gpio_config(&io_conf);
+      |     ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:24:5: error: unknown type name 'spi_bus_config_t'
+   24 |     spi_bus_config_t buscfg = {
+      |     ^~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:25:9: error: field name not in record or union initializer
+   25 |         .miso_io_num = -1,               // จอนี้ Write-Only ไม่มีขา MISO
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:25:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:26:9: error: field name not in record or union initializer
+   26 |         .mosi_io_num = OLED_PIN_MOSI,     // GPIO 23
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:26:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:3:26: error: 'GPIO_NUM_23' undeclared (first use in this function)
+    3 | #define OLED_PIN_MOSI   (GPIO_NUM_23) // D1 (SPI MOSI Data)
+      |                          ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:26:24: note: in expansion of macro 'OLED_PIN_MOSI'
+   26 |         .mosi_io_num = OLED_PIN_MOSI,     // GPIO 23
+      |                        ^~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:3:25: warning: excess elements in scalar initializer
+    3 | #define OLED_PIN_MOSI   (GPIO_NUM_23) // D1 (SPI MOSI Data)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:26:24: note: in expansion of macro 'OLED_PIN_MOSI'
+   26 |         .mosi_io_num = OLED_PIN_MOSI,     // GPIO 23
+      |                        ^~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:3:25: note: (near initialization for 'buscfg')
+    3 | #define OLED_PIN_MOSI   (GPIO_NUM_23) // D1 (SPI MOSI Data)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:26:24: note: in expansion of macro 'OLED_PIN_MOSI'
+   26 |         .mosi_io_num = OLED_PIN_MOSI,     // GPIO 23
+      |                        ^~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:27:9: error: field name not in record or union initializer
+   27 |         .sclk_io_num = OLED_PIN_SCK,      // GPIO 18
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:27:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:2:26: error: 'GPIO_NUM_18' undeclared (first use in this function)
+    2 | #define OLED_PIN_SCK    (GPIO_NUM_18) // D0 (SPI Clock)
+      |                          ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:27:24: note: in expansion of macro 'OLED_PIN_SCK'
+   27 |         .sclk_io_num = OLED_PIN_SCK,      // GPIO 18
+      |                        ^~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:2:25: warning: excess elements in scalar initializer
+    2 | #define OLED_PIN_SCK    (GPIO_NUM_18) // D0 (SPI Clock)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:27:24: note: in expansion of macro 'OLED_PIN_SCK'
+   27 |         .sclk_io_num = OLED_PIN_SCK,      // GPIO 18
+      |                        ^~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:2:25: note: (near initialization for 'buscfg')
+    2 | #define OLED_PIN_SCK    (GPIO_NUM_18) // D0 (SPI Clock)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:27:24: note: in expansion of macro 'OLED_PIN_SCK'
+   27 |         .sclk_io_num = OLED_PIN_SCK,      // GPIO 18
+      |                        ^~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:28:9: error: field name not in record or union initializer
+   28 |         .quadwp_io_num = -1,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:28:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:28:26: warning: excess elements in scalar initializer
+   28 |         .quadwp_io_num = -1,
+      |                          ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:28:26: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:29:9: error: field name not in record or union initializer
+   29 |         .quadhd_io_num = -1,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:29:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:29:26: warning: excess elements in scalar initializer
+   29 |         .quadhd_io_num = -1,
+      |                          ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:29:26: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:30:9: error: field name not in record or union initializer
+   30 |         .max_transfer_sz = 1024 + 16,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:30:9: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:30:28: warning: excess elements in scalar initializer
+   30 |         .max_transfer_sz = 1024 + 16,
+      |                            ^~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:30:28: note: (near initialization for 'buscfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:34:5: error: unknown type name 'esp_err_t'
+   34 |     esp_err_t ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
+      |     ^~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:34:21: error: implicit declaration of function 'spi_bus_initialize' [-Wimplicit-function-declaration]
+   34 |     esp_err_t ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
+      |                     ^~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:34:40: error: 'SPI2_HOST' undeclared (first use in this function)
+   34 |     esp_err_t ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
+      |                                        ^~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:34:60: error: 'SPI_DMA_CH_AUTO' undeclared (first use in this function)
+   34 |     esp_err_t ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
+      |                                                            ^~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:35:16: error: 'ESP_OK' undeclared (first use in this function)
+   35 |     if (ret != ESP_OK) return ret;
+      |                ^~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:38:5: error: unknown type name 'spi_device_interface_config_t'
+   38 |     spi_device_interface_config_t devcfg = {
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:39:9: error: field name not in record or union initializer
+   39 |         .clock_speed_hz = 10 * 1000 * 1000, // 10 MHz แสดงผลลื่นไหล
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:39:9: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:40:9: error: field name not in record or union initializer
+   40 |         .mode = 0,                          // Mode 0: CPOL=0, CPHA=0
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:40:9: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:40:17: warning: excess elements in scalar initializer
+   40 |         .mode = 0,                          // Mode 0: CPOL=0, CPHA=0
+      |                 ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:40:17: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:41:9: error: field name not in record or union initializer
+   41 |         .spics_io_num = OLED_PIN_CS,        // GPIO 5
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:41:9: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:6:26: error: 'GPIO_NUM_5' undeclared (first use in this function)
+    6 | #define OLED_PIN_CS     (GPIO_NUM_5)  // CS (Chip Select - Active LOW)
+      |                          ^~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:41:25: note: in expansion of macro 'OLED_PIN_CS'
+   41 |         .spics_io_num = OLED_PIN_CS,        // GPIO 5
+      |                         ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:6:25: warning: excess elements in scalar initializer
+    6 | #define OLED_PIN_CS     (GPIO_NUM_5)  // CS (Chip Select - Active LOW)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:41:25: note: in expansion of macro 'OLED_PIN_CS'
+   41 |         .spics_io_num = OLED_PIN_CS,        // GPIO 5
+      |                         ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:6:25: note: (near initialization for 'devcfg')
+    6 | #define OLED_PIN_CS     (GPIO_NUM_5)  // CS (Chip Select - Active LOW)
+      |                         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:41:25: note: in expansion of macro 'OLED_PIN_CS'
+   41 |         .spics_io_num = OLED_PIN_CS,        // GPIO 5
+      |                         ^~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:42:9: error: field name not in record or union initializer
+   42 |         .queue_size = 7,
+      |         ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:42:9: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:42:23: warning: excess elements in scalar initializer
+   42 |         .queue_size = 7,
+      |                       ^
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:42:23: note: (near initialization for 'devcfg')
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:45:12: error: implicit declaration of function 'spi_bus_add_device' [-Wimplicit-function-declaration]
+   45 |     return spi_bus_add_device(SPI2_HOST, &devcfg, &s_spi_handle);
+      |            ^~~~~~~~~~~~~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c: At top level:
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:49:20: error: unknown type name 'uint8_t'
+   49 | void oled_send_cmd(uint8_t cmd)
+      |                    ^~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+  +++ |+#include <stdint.h>
+    1 | // 1. กำหนดขาเชื่อมต่อตามแผนภาพวงจรจริง (GPIO 18, 23, 4, 2, 5)
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:60:27: error: unknown type name 'uint8_t'
+   60 | void oled_send_data(const uint8_t *data, size_t len)
+      |                           ^~~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:60:27: note: 'uint8_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:60:42: error: unknown type name 'size_t'
+   60 | void oled_send_data(const uint8_t *data, size_t len)
+      |                                          ^~~~~~
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:60:42: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c: In function 'oled_spi_init':
+C:/Users/namthip411/Week-09-SPI-OLED-and-Kestrel-UI/main/main.c:46:1: error: control reaches end of non-void function [-Werror=return-type]
+   46 | }
+      | ^
+cc1.exe: some warnings being treated as errors
+[3/9] No install step for 'bootloader'
+ninja: build stopped: subcommand failed.
