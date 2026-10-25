@@ -373,9 +373,6 @@ Server: Kestrel
      -d '{"message":""}'
    ```
    * **ผลที่คาดหวัง:** ได้รับ **`400 Bad Request`** แจ้งว่าข้อความต้องไม่ว่างเปล่า
-
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2aa2f650-f158-43e4-bcad-cfb9d6246383" />
-
 ---
 
 ## 5. คำถามท้ายการทดลองเพื่อการประเมินผล
