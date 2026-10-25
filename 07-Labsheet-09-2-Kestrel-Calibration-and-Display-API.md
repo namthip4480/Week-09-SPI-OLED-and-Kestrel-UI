@@ -292,8 +292,6 @@ Server: Kestrel
 
 {"raw":2048,"calibrated":50.0,"unit":"%","displayMsg":"SYSTEM READY","timestamp":"2026-09-13T..."}
 ```
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/60e268d9-886a-46cd-a5a4-376ae2112cdb" />
-
 ---
 
 #### 2. ทำการ Calibrate เซนเซอร์ใหม่ (HTTP POST พร้อม JSON Body)
@@ -319,9 +317,6 @@ Server: Kestrel
 
 {"status":"success","settings":{"rawMin":200,"rawMax":3800,"scaleMin":0,"scaleMax":1000,"unit":"RPM"}}
 ```
-
-<img width="1366" height="768" alt="Screenshot (1332)" src="https://github.com/user-attachments/assets/a0afbb9d-26f5-4236-8516-83621f1ea2eb" />
-
 ---
 
 #### 3. ส่งข้อความใหม่ไปแสดงบนหน้าจอ OLED (HTTP POST)
@@ -346,9 +341,6 @@ Server: Kestrel
 
 {"status":"success","current":"Hello OLED"}
 ```
-
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1ae405cc-eef0-4f06-afa2-67dbe43e1341" />
-
 ---
 
 > [!WARNING]
